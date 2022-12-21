@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Huduma.SharedKernel", "sharedkernel\src\Huduma.SharedKernel\Huduma.SharedKernel.csproj", "{785AECEB-7982-47D2-9046-2A4544AA4AA3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "sharedkernel", "sharedkernel", "{08D1DD02-E625-431A-B8EC-4785AF94B0AD}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{E3922BA4-04D7-4E27-AE1E-545F3CA5A89A}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{65EB2ED0-1DD7-416C-B35D-AB37E628BA1D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Huduma.SharedKernel.Tests", "sharedkernel\tests\Huduma.SharedKernel.Tests\Huduma.SharedKernel.Tests.csproj", "{19EB825F-A23D-4CCD-904A-BD74E12A5716}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{785AECEB-7982-47D2-9046-2A4544AA4AA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{785AECEB-7982-47D2-9046-2A4544AA4AA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{785AECEB-7982-47D2-9046-2A4544AA4AA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{785AECEB-7982-47D2-9046-2A4544AA4AA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{19EB825F-A23D-4CCD-904A-BD74E12A5716}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{19EB825F-A23D-4CCD-904A-BD74E12A5716}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{19EB825F-A23D-4CCD-904A-BD74E12A5716}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{19EB825F-A23D-4CCD-904A-BD74E12A5716}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{E3922BA4-04D7-4E27-AE1E-545F3CA5A89A} = {08D1DD02-E625-431A-B8EC-4785AF94B0AD}
+		{65EB2ED0-1DD7-416C-B35D-AB37E628BA1D} = {08D1DD02-E625-431A-B8EC-4785AF94B0AD}
+		{785AECEB-7982-47D2-9046-2A4544AA4AA3} = {E3922BA4-04D7-4E27-AE1E-545F3CA5A89A}
+		{19EB825F-A23D-4CCD-904A-BD74E12A5716} = {65EB2ED0-1DD7-416C-B35D-AB37E628BA1D}
+	EndGlobalSection
+EndGlobal
