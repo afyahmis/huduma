@@ -1,6 +1,10 @@
 name: CI
 
-on: [push, pull_request]
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
 
 jobs:
   build:
@@ -8,7 +12,6 @@ jobs:
 
     strategy:
       matrix:
-        project: [shared, registry]
         python-version: [3.11]
 
     steps:
@@ -32,13 +35,23 @@ jobs:
         key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
         restore-keys: |
           ${{ runner.os }}-poetry-
-          
-    - name: Install dependencies
+
+    - name: Install shared dependencies
       run: |
-        cd ${{ matrix.project }}
+        cd src/shared
         poetry install
 
-    - name: Run tests
+    - name: Run shared tests
       run: |
-        cd ${{ matrix.project }}
+        cd src/shared
+        poetry run pytest
+
+    - name: Install registry dependencies
+      run: |
+        cd src/registry
+        poetry install
+
+    - name: Run registry tests
+      run: |
+        cd src/registry
         poetry run pytest
