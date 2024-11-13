@@ -1,0 +1,19 @@
+[tool.poetry]
+name = "shared"
+version = "0.1.0"
+description = "huduma shared module"
+authors = ["koskedk <koskedk@live.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+
+
+[tool.poetry.group.dev.dependencies]
+pytest = "^8.3.3"
+ruff = "^0.7.3"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
+

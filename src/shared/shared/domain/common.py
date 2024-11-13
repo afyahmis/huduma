@@ -1,5 +1,5 @@
 class ValueObject:
-    """base VO"""
+    """base value object"""
 
 
 class Entity:
