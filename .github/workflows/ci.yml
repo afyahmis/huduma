@@ -8,7 +8,7 @@ jobs:
 
     strategy:
       matrix:
-        project: [shared, registry]
+        project: [src/shared, src/registry]
         python-version: [3.11]
 
     steps:
@@ -35,10 +35,10 @@ jobs:
           
     - name: Install dependencies
       run: |
-        cd src/${{ matrix.project }}
+        cd ${{ matrix.project }}
         poetry install
 
     - name: Run tests
       run: |
-        cd src/${{ matrix.project }}
+        cd ${{ matrix.project }}
         poetry run pytest
