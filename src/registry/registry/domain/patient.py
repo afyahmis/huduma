@@ -5,6 +5,5 @@ from datetime import date
 
 @dataclass
 class Patient(AggregateRoot):
-    id: int
     name: str
     dob: date
