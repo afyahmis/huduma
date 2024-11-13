@@ -35,10 +35,10 @@ jobs:
           
     - name: Install dependencies
       run: |
-        cd ${{ matrix.project }}
+        cd src/${{ matrix.project }}
         poetry install
 
     - name: Run tests
       run: |
-        cd ${{ matrix.project }}
+        cd src/${{ matrix.project }}
         poetry run pytest
