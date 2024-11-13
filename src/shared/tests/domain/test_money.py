@@ -1,5 +1,5 @@
-import pytest
-from domain.money import Money
+from shared.domain.money import Money
+
 
 def test_money_init():
     kes = Money(1, "kes")

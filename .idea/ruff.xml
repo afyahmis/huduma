@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="RuffConfigService">
+    <option name="projectRuffExecutablePath" value="C:\Users\KKimutai\AppData\Local\pypoetry\Cache\virtualenvs\huduma-ljxRPBJC-py3.11\Scripts\ruff.exe" />
+    <option name="runRuffOnSave" value="true" />
+    <option name="useRuffFormat" value="true" />
+    <option name="useRuffLsp" value="true" />
+  </component>
+</project>

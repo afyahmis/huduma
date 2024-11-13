@@ -1,3 +1,0 @@
-rich
-fastapi
-uvicorn[standar]
