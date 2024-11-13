@@ -8,6 +8,14 @@ class Money(ValueObject):
     amount: float
     currency: str
 
+    @property
+    def amount_curr(self):
+        return f"{self.amount:,.2f} {self.currency}"
+
+    @property
+    def curr_amount(self):
+        return f"{self.currency} {self.amount:,.2f}"
+
     def __post_init__(self):
         if self.amount < 0:
             raise InvalidAmountError(self.amount)
@@ -15,7 +23,7 @@ class Money(ValueObject):
         object.__setattr__(self, "currency", self.currency.upper())
 
     def __str__(self):
-        return f"{self.amount:,.2f} {self.currency}"
+        return self.amount_curr
 
 
 class InvalidAmountError(BusinessError):

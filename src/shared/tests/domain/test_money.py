@@ -13,7 +13,7 @@ def test_money_init():
 def test_money_currency_format():
     usd = Money(147000.50, "usd")
     assert usd.currency == "USD"
-    print(f"\n{usd}")
+    print(f"\n{usd.curr_amount}")
 
 
 def test_money_valid_only():
